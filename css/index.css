@@ -1,0 +1,132 @@
+.hero-section {
+    display: flex;
+
+    justify-content: center;
+    width: 100vw;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../assets/imgs/index/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+
+    height: 800px;
+}
+
+
+.hero-section__title {
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
+    font-size: 5.5rem;
+    width: 600px;
+}
+
+.hero-section__span1 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font-family);
+}
+
+.hero-section__span2 {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--third-text-color);
+}
+
+.hero-section__title,
+.hero-section__span1,
+.hero-section__span2 {
+    margin-left: 20%;
+}
+
+
+.country-stats-section {
+    display: flex;
+    height: 200px;
+    width: var(--default-width);
+    margin: auto;
+    margin-top: 75px;
+}
+
+.country-stats-section__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.country-stats-section__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100%;
+    background-color: var(--third-color);
+    border-radius: 3rem;
+}
+
+.country-stats-section__list-item__span1 {
+    font-family: var(--secondary-font-family);
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.country-stats-section__list-item__span2 {
+    font-size: 1.5rem;
+    color: var(--four-text-color);
+}
+
+.carousel-section {
+    margin: auto;
+    margin-top: 100px;
+    width: var(--default-width);
+}
+
+.carousel-section-title {
+    margin: 0;
+    font-family: var(--secondary-font-family);
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.carousel-section__carousel {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-item {}
+
+.carousel-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.carousel-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    filter: brightness(50%);
+    transition: filter 0.15s ease;
+    cursor: pointer;
+}
+
+.carousel-img:hover {
+    filter: brightness(100%);
+}
