@@ -1,11 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comida · Senegal</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/comida.css">
+    <script src="./js/default.js" defer></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__content">
+            <a class="header__link" href="index.html">
+                <img class="header__link__img" src="./assets/imgs/logo.png" />
+                <h1 class="header__link__text">
+                    Senegal
+                </h1>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__list-item">
+                        <a href="index.html" class="header__nav__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header__nav__list-item">
+                        <a href="culturahistoria.html" class="header__nav__link">
+                            Cultura & História
+                        </a>
+                    </li>
+                    <li class="header__nav__list-item">
+                        <a href="comida.html" class="header__nav__link">
+                            Comida
+                        </a>
+                    </li>
+                    <li class="header__nav__list-item">
+                        <a href="monumento.html" class="header__nav__link">
+                            Monumentos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="header__menu-button__line"></span>
+                <span class="header__menu-button__line"></span>
+                <span class="header__menu-button__line"></span>
+            </button>
+        </div>
+
+    </header>
+
+    <section class="food-hero-section">
+        <span class="food-hero-section__span1">
+            Comida · Lekk bu neex
+        </span>
+        <h2 class="food-hero-section__title">
+            Sabores da Teranga
+        </h2>
+        <span class="food-hero-section__span2">
+            Peixe fresco, arroz, amendoim e muito tempero: no Senegal, a refeição se divide numa travessa só.
+        </span>
+    </section>
+
+    <section class="featured-dish-section">
+        <div class="featured-dish-section__content">
+            <img class="featured-dish-section__img" src="./assets/imgs/comida/thieboudienne.jpg"
+                alt="Prato de thieboudienne com peixe, arroz e legumes">
+            <div class="featured-dish-section__body">
+                <span class="featured-dish-section__tag">
+                    Prato nacional
+                </span>
+                <h2 class="featured-dish-section__title">
+                    Thieboudienne
+                </h2>
+                <p class="featured-dish-section__text">
+                    Peixe recheado com ervas, cozido com arroz em molho de tomate, mandioca, cenoura, repolho e
+                    berinjela. Nasceu em Saint-Louis e é servido em uma grande travessa para toda a família comer
+                    junta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dishes-section">
+        <h2 class="section-title">
+            Pratos principais
+        </h2>
+        <ul class="dishes-section__list">
+            <li class="dish-card">
+                <img class="dish-card__img" src="./assets/imgs/comida/yassa.jfif" alt="Poulet yassa">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Yassa
+                    </h3>
+                    <p class="dish-card__text">
+                        Frango ou peixe marinado em limão e muita cebola, grelhado e depois cozido no próprio molho.
+                        Vem com arroz branco.
+                    </p>
+                </div>
+            </li>
+            <li class="dish-card">
+                <img class="dish-card__img" src="./assets/imgs/comida/mafe.jfif" alt="Mafé">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Mafé
+                    </h3>
+                    <p class="dish-card__text">
+                        Ensopado cremoso de carne com pasta de amendoim, tomate e batata-doce. Comida de conforto.
+                    </p>
+                </div>
+            </li>
+            <li class="dish-card">
+                <img class="dish-card__img" src="./assets/imgs/comida/dibi.jpg" alt="Dibi">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Dibi
+                    </h3>
+                    <p class="dish-card__text">
+                        Carne de carneiro grelhada na brasa, cortada na hora e servida com cebola e mostarda. Comida
+                        de rua clássica de Dakar.
+                    </p>
+                </div>
+            </li>
+            <li class="dish-card">
+                <img class="dish-card__img" src="./assets/imgs/comida/pastels.jfif" alt="Pastels">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Pastels
+                    </h3>
+                    <p class="dish-card__text">
+                        Pastéis fritos recheados com peixe temperado. Entrada ou lanche, sempre com molho picante.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="drinks-section">
+        <h2 class="section-title">
+            Bebidas e doces
+        </h2>
+        <ul class="drinks-section__list">
+            <li class="dish-card dish-card--small">
+                <img class="dish-card__img" src="./assets/imgs/comida/bissap.jfif" alt="Copo de bissap">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Bissap
+                    </h3>
+                    <p class="dish-card__text">
+                        Suco gelado de flor de hibisco, vermelho e levemente azedo.
+                    </p>
+                </div>
+            </li>
+            <li class="dish-card dish-card--small">
+                <img class="dish-card__img" src="./assets/imgs/comida/gingembre.webp" alt="Suco de gengibre">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Suco de gengibre
+                    </h3>
+                    <p class="dish-card__text">
+                        Forte e picante, adoçado com açúcar e às vezes com limão.
+                    </p>
+                </div>
+            </li>
+            <li class="dish-card dish-card--small">
+                <img class="dish-card__img" src="./assets/imgs/comida/cafe-touba.jfif" alt="Café Touba">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Café Touba
+                    </h3>
+                    <p class="dish-card__text">
+                        Café com pimenta-da-guiné, criado na cidade santa de Touba.
+                    </p>
+                </div>
+            </li>
+            <li class="dish-card dish-card--small">
+                <img class="dish-card__img" src="./assets/imgs/comida/thiakry.jfif" alt="Thiakry">
+                <div class="dish-card__body">
+                    <h3 class="dish-card__title">
+                        Thiakry
+                    </h3>
+                    <p class="dish-card__text">
+                        Sobremesa de cuscuz de painço com iogurte, leite e baunilha.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="food-quote-footer">
+        <blockquote class="food-quote-footer__quote">
+            <p class="food-quote-footer__quote__text">
+                Na mesa senegalesa, ninguém come sozinho: a travessa é de todos.
+            </p>
+        </blockquote>
+    </footer>
 </body>
+
 </html>

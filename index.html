@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Senegal</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/default.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/default.js" defer></script>
 </head>
 
 <body>
@@ -26,22 +28,27 @@
                         </a>
                     </li>
                     <li class="header__nav__list-item">
-                        <a href="" class="header__nav__link">
+                        <a href="culturahistoria.html" class="header__nav__link">
                             Cultura & História
                         </a>
                     </li>
                     <li class="header__nav__list-item">
-                        <a href="" class="header__nav__link">
+                        <a href="comida.html" class="header__nav__link">
                             Comida
                         </a>
                     </li>
                     <li class="header__nav__list-item">
-                        <a href="" class="header__nav__link">
-                            Locais
+                        <a href="monumento.html" class="header__nav__link">
+                            Monumentos
                         </a>
                     </li>
                 </ul>
             </nav>
+            <button class="header__menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="header__menu-button__line"></span>
+                <span class="header__menu-button__line"></span>
+                <span class="header__menu-button__line"></span>
+            </button>
         </div>
 
     </header>
@@ -88,15 +95,57 @@
         <h2 class="carousel-section-title">
             Explore o País
         </h2>
-        <ul class="carousel-section__carousel">
-            <li class="carousel-item">
-                <a>
-                    <img src="./assets/imgs/index/bg.jpg" class="carousel-img">
-                </a>
-
-            </li>
-        </ul>
+        <div class="carousel-section__wrapper" role="region" aria-roledescription="carrossel"
+            aria-label="Explore o Senegal">
+            <ul class="carousel-section__carousel">
+                <li class="carousel-item carousel-item--active">
+                    <a class="carousel-item__link" href="culturahistoria.html">
+                        <img src="./assets/imgs/culturahistoria/bg.jpeg" class="carousel-img"
+                            alt="Música e cultura do Senegal">
+                        <div class="carousel-item__caption">
+                            <span class="carousel-item__tag">Cultura & História</span>
+                            <h3 class="carousel-item__title">Reinos, resistência e ritmo</h3>
+                            <span class="carousel-item__text">Da Ilha de Gorée ao mbalax.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="carousel-item">
+                    <a class="carousel-item__link" href="comida.html">
+                        <img src="./assets/imgs/comida/bg.jpg" class="carousel-img"
+                            alt="Thieboudienne, prato nacional do Senegal">
+                        <div class="carousel-item__caption">
+                            <span class="carousel-item__tag">Comida</span>
+                            <h3 class="carousel-item__title">Sabores da Teranga</h3>
+                            <span class="carousel-item__text">Thieboudienne, yassa, mafé e bissap.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="carousel-item">
+                    <a class="carousel-item__link" href="monumento.html">
+                        <img src="./assets/imgs/monumento/bg.webp" class="carousel-img"
+                            alt="Monumento do Renascimento Africano em Dakar">
+                        <div class="carousel-item__caption">
+                            <span class="carousel-item__tag">Monumentos</span>
+                            <h3 class="carousel-item__title">Lugares para visitar</h3>
+                            <span class="carousel-item__text">Lago Rosa, Gorée, Touba e muito mais.</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button class="carousel-section__button carousel-section__button--prev" type="button"
+                aria-label="Slide anterior">&#10094;</button>
+            <button class="carousel-section__button carousel-section__button--next" type="button"
+                aria-label="Próximo slide">&#10095;</button>
+            <div class="carousel-section__dots"></div>
+        </div>
     </section>
+    <footer class="home-quote-footer">
+        <blockquote class="home-quote-footer__quote">
+            <p class="home-quote-footer__quote__text">
+                Do Atlântico ao rio Senegal, cada canto tem uma história. Venha conhecer.
+            </p>
+        </blockquote>
+    </footer>
 </body>
 
 </html>

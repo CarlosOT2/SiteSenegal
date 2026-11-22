@@ -1,0 +1,267 @@
+.food-hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 800px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../assets/imgs/comida/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.food-hero-section__span1 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font-family);
+}
+
+.food-hero-section__title {
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
+    font-size: 5.5rem;
+    width: 650px;
+}
+
+.food-hero-section__span2 {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--third-text-color);
+    width: 520px;
+}
+
+.food-hero-section__span1,
+.food-hero-section__title,
+.food-hero-section__span2 {
+    margin-left: 20%;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: var(--secondary-font-family);
+    font-size: 3rem;
+}
+
+.featured-dish-section {
+    width: var(--default-width);
+    margin: auto;
+    margin-top: 75px;
+}
+
+.featured-dish-section__content {
+    display: flex;
+    align-items: stretch;
+
+    background-color: var(--third-color);
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.featured-dish-section__img {
+    width: 50%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-dish-section__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.featured-dish-section__tag {
+    font-family: var(--secondary-font-family);
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.featured-dish-section__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: var(--secondary-font-family);
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.featured-dish-section__text {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--four-text-color);
+}
+
+.dishes-section,
+.drinks-section {
+    width: var(--default-width);
+    margin: auto;
+    margin-top: 100px;
+}
+
+.dishes-section__list,
+.drinks-section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    gap: 20px;
+}
+
+.dishes-section__list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.drinks-section__list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--third-color);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.dish-card__img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.dish-card__body {
+    padding: 25px 30px 30px;
+}
+
+.dish-card__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: var(--secondary-font-family);
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.dish-card__text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--four-text-color);
+}
+
+.dish-card--small .dish-card__img {
+    height: 180px;
+}
+
+.dish-card--small .dish-card__body {
+    padding: 18px 20px 22px;
+}
+
+.dish-card--small .dish-card__title {
+    font-size: 1.5rem;
+}
+
+.dish-card--small .dish-card__text {
+    font-size: 0.95rem;
+}
+
+.food-quote-footer {
+    width: 100vw;
+    margin-top: 100px;
+    padding: 100px 0;
+    background-color: var(--primary-color);
+}
+
+.food-quote-footer__quote {
+    width: var(--default-width);
+    margin: auto;
+}
+
+.food-quote-footer__quote__text {
+    margin: 0;
+    max-width: 700px;
+
+    font-family: var(--secondary-font-family);
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: var(--secondary-text-color);
+}
+
+@media (max-width: 1040px) {
+
+    .featured-dish-section,
+    .dishes-section,
+    .drinks-section,
+    .food-quote-footer__quote {
+        width: 90%;
+    }
+
+    .food-hero-section {
+        height: 600px;
+    }
+
+    .food-hero-section__title {
+        width: auto;
+        font-size: 4rem;
+    }
+
+    .food-hero-section__span2 {
+        width: auto;
+    }
+
+    .food-hero-section__span1,
+    .food-hero-section__title,
+    .food-hero-section__span2 {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .featured-dish-section__content {
+        flex-direction: column;
+    }
+
+    .featured-dish-section__img,
+    .featured-dish-section__body {
+        width: 100%;
+    }
+
+    .dishes-section__list,
+    .drinks-section__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .food-hero-section {
+        height: 500px;
+    }
+
+    .food-hero-section__span1 {
+        font-size: 1.3rem;
+    }
+
+    .featured-dish-section__title {
+        font-size: 2rem;
+    }
+
+    .food-hero-section__title {
+        font-size: 2.8rem;
+    }
+
+    .food-hero-section__span2 {
+        font-size: 1rem;
+    }
+}
