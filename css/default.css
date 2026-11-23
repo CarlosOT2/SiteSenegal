@@ -104,32 +104,12 @@ body {
 
     width: 44px;
     height: 44px;
+    color: var(--primary-color);
+    font-size: 30px;
     padding: 0;
     border: none;
     background: transparent;
     cursor: pointer;
-}
-
-.header__menu-button__line {
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    background-color: var(--primary-color);
-
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.header__menu-button[aria-expanded="true"] .header__menu-button__line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-
-.header__menu-button[aria-expanded="true"] .header__menu-button__line:nth-child(2) {
-    opacity: 0;
-}
-
-.header__menu-button[aria-expanded="true"] .header__menu-button__line:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
 }
 
 @media (max-width: 1040px) {
